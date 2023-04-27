@@ -1,4 +1,4 @@
-package com.example.myanywhereapplication.simpsons.network
+package com.example.myanywhereapplication.network
 
 import retrofit2.Response
 import retrofit2.Retrofit
@@ -19,9 +19,9 @@ class MyRetrofit {
 interface RetrofitService {
 
     @GET("?q=simpsons+characters&format=json")
-    suspend fun getSimpsons() : Response<Bitcoin>
+    suspend fun getSimpsons() : Response<Any?>
 
-    @GET("v1/ticker")
-    suspend fun getTheWire() : Response<Bitcoin>
+    @GET("?q=the+wire+characters&format=json")
+    suspend fun getTheWire() : Response<Any?>
 
 }

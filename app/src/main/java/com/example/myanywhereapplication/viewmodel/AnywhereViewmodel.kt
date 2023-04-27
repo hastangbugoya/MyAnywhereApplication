@@ -1,4 +1,6 @@
 package com.example.myanywhereapplication.viewmodel
 
-class SnywhereViewmodel {
+import androidx.lifecycle.ViewModel
+
+open class AnywhereViewmodel: ViewModel() {
 }
